@@ -1,2 +1,2 @@
-# Portofolio
-A website dedicated to show my portfolio
+# Portfolio
+A website dedicated to showing my portfolio
