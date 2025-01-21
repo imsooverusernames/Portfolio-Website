@@ -7,20 +7,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="icon" href="resources\images\site-logo.png" type="image/x-icon">
     <title>Bruno Borici —&nbsp;Design, Art Direction, Interaction</title>
 </head>
 <body>
     <header>
-        <h4><a href="#home">BrunoBorici</a></h4>
+        <h4 class="logo"><a href="#">BrunoBorici</a></h4>
         <nav>
             <ul>
-                <li><a href="#home" aria-label="Copy email address">Mail</a></li>
-                <li><a href="#about" aria-label="Visit my LinkedIn profile">LinkedIn</a></li>
-
+                <li><a onclick="showToast(emailMsg)" aria-label="Copy email address">Mail</a></li>
+                <li><a href="https://www.linkedin.com/in/bruno-borici-212154337/" target="_blank" aria-label="Visit my LinkedIn ">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
+
+    <div id="toast-container"></div>
 
     <nav id="nav-bar" role="navigation">
         <ul>
