@@ -28,7 +28,20 @@ var shadow = '';
 for (var i = 0; i < 15; i++) {
     shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #222222';
 }
+
 text.style.textShadow = shadow;
+
+function applyIsometricShadow(element, color = '#222222', layers = 15) {
+    let shadow = '';
+    for (let i = 0; i < layers; i++) {
+        shadow += (shadow ? ',' : '') + -i + 'px ' + i + 'px 0 ' + color;
+    }
+    element.style.boxShadow = shadow;
+}
+
+document.querySelectorAll('.isometric-container').forEach(container => {
+    applyIsometricShadow(container);
+});
 
 // Copy email to clipboard
 let toastBox = document.getElementById('toast-container');

@@ -27,7 +27,7 @@
     <nav id="nav-bar" role="navigation">
         <ul>
             <li>
-                <a href="#home">
+                <a href="#">
                     <svg viewBox="0 -960 960 960" fill="#e8eaed">
                         <path d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z"/>
                     </svg>
@@ -68,23 +68,25 @@
             </div>
         </section>
         <section id="projects">
-            <h1>Projects</h1>
-            <p>some of the projects that i've worked on, with many more comming soon(-ish)</p>
+            <div class="project-text">
+                <h1 class="heading">Projects</h1>
+                <p>some of the projects that i've worked on, with many more comming soon(-ish)</p>
+            </div>
             <div class="showcase">
                 <div class="container">
-                    <div class="project-img">
+                    <div class="project-img isometric-container">
                         <img src="resources\images\blurred.jpg" alt="Upcoming Project" loading="lazy">
                     </div>
                     <h4>Upcoming...</h4>
                 </div>
                 <div class="container">
-                    <div class="project-img">
+                    <div class="project-img isometric-container">
                         <img src="resources\images\blurred.jpg" alt="Upcoming Project" loading="lazy">
                     </div>
                     <h4>Upcoming...</h4>
                 </div>
                 <div class="container">
-                    <div class="project-img">
+                    <div class="project-img isometric-container">
                         <img src="resources\images\blurred.jpg" alt="Upcoming Project" loading="lazy">
                     </div>
                     <h4>Upcoming...</h4>
@@ -92,25 +94,49 @@
             </div>
         </section>
         <section id="skillset">
-            <h1>Skillset</h1>
+            <h1 class="heading">Skillset</h1>
             <ul>
-                <img src="resources\svg\html.svg" alt="html-logo">
-                <li>HTML</li>
-                <img src="resources/svg/css.svg" alt="css-logo">
-                <li>CSS</li>
-                <img src="resources\svg\js.svg" alt="javascript-logo">
-                <li>JavaScript</li>
-                <img src="resources\svg\github.svg" alt="github-logo">
-                <li>GitHub</li>
-                <img src="resources\svg\react.svg" alt="react-logo">
-                <li>React</li>
+                <li class="isometric-container">
+                    <img src="resources/svg/html.svg" alt="HTML logo">
+                    <span>HTML</span>
+                </li>
+                <li class="isometric-container">
+                    <img src="resources/svg/css.svg" alt="CSS logo">
+                    <span>CSS</span>
+                </li>
+                <li class="isometric-container">
+                    <img src="resources/svg/js.svg" alt="JavaScript logo">
+                    <span>JavaScript</span>
+                </li>
+                <li class="isometric-container">
+                    <img src="resources/svg/github.svg" alt="GitHub logo">
+                    <span>GitHub</span>
+                </li>
+                <li class="isometric-container">
+                    <img src="resources/svg/react.svg" alt="React logo">
+                    <span>React</span>
+                </li>
             </ul>
-        </section>
+        </section>        
     </main>
     <footer>
-        <p>© 2025 Bruno Borici</p>
-        <img src="resources\svg\linkedin.svg" alt="site-logo">
-        <img src="resources\svg\mail.svg" alt="site-logo">
+        <div>
+            <h4 class="logo">BrunoBorici</h4>
+            <p>Looking for opportunities to grow together</p>
+        </div>
+        
+        <div class="contact-section">
+            <div class="contact-info">
+                <div class="contact-button">
+                    <a>Contact me</a>
+                    <img src="resources/svg/pointer.svg" alt="pointer" class="pointer-icon">
+                </div>
+            </div>
+            <div class="social-icons">
+                <img src="resources/svg/mail.svg" alt="Email" class="social-icon">
+                <img src="resources/svg/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </div>
+        </div>
     </footer>
 </body>
 </html>
