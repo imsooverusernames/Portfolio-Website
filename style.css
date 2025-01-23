@@ -21,6 +21,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Scrollbar Styling */ 
 
   html::-webkit-scrollbar {
@@ -132,6 +136,7 @@ header h4 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+    user-select: none;
 }
 
 header h4 a {
@@ -159,6 +164,7 @@ header nav ul li a {
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s ease;
+    user-select: none;
 }
 
 header nav ul li a::after {
@@ -221,6 +227,10 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
+#nav-bar hr {
+
+}
+
 #nav-bar svg {
     width: 24px;
     height: 24px;
@@ -238,6 +248,7 @@ header nav ul li a:hover {
     height: 50px;
     width: 50px;
     padding: 0;
+    margin-left: -15px;
     background: transparent;
     border: none;
     display: flex;
@@ -256,3 +267,41 @@ header nav ul li a:hover {
 .darkmode #theme-switch svg:last-child {
     display: block;
 }
+
+/* Home Styling */
+
+#home {
+    position: relative;
+    height: 50vh;
+    padding: 4rem 4rem;
+    color: var(--text-color);
+    display: flex;
+    text-align: flex-start;
+    flex-direction: column;
+    margin: 4rem 4rem;
+}
+
+#isometric {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(-15deg) skew(20deg);
+    user-select: none;
+}
+
+#isometric::before {
+    font-family: 'Shrikhand', cursive;
+    content: attr(data-text);
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    filter: blur(3px);
+    z-index: -1;
+}
+

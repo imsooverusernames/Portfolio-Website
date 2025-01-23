@@ -22,6 +22,13 @@ themeSwitch.addEventListener('click', () => {
     darkmode !== "active" ? enableDarkMode() : disableDarkMode();
 });
 
+// Isometric text code
+var text = document.getElementById('isometric');
+var shadow = '';
+for (var i = 0; i < 15; i++) {
+    shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #222222';
+}
+text.style.textShadow = shadow;
 
 // Copy email to clipboard
 let toastBox = document.getElementById('toast-container');
