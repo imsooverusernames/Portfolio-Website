@@ -25,7 +25,7 @@ themeSwitch.addEventListener('click', () => {
 // Isometric text code
 var text = document.getElementById('isometric');
 var shadow = '';
-for (var i = 0; i < 15; i++) {
+for (var i = 0; i < 10; i++) {
     shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #222222';
 }
 
