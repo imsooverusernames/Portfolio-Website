@@ -107,6 +107,16 @@ h6 {
   animation: dropdown 0.2s linear forwards;
 }
 
+.toast-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.toast-icon svg {
+    fill: var(--text-color);
+    margin: 3px;
+}
+
 @keyframes dropdown {
   100% {
     transform: translateY(0);
@@ -161,7 +171,6 @@ header nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-right: 4rem;
   padding: 0;
 }
 
@@ -175,7 +184,7 @@ header nav ul li a {
   background: var(--bg-color);
   text-decoration: none;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: font-weight 0.3s ease;
   user-select: none;
 }
 
@@ -216,6 +225,8 @@ header nav ul li a:hover {
 
 #nav-bar {
   position: fixed;
+  height: 40px;
+  width: 260px;
   bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
@@ -228,41 +239,62 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   z-index: 1000;
-  /* add needed costumizations */
+  overflow: hidden;
 }
 
 #nav-bar ul {
   list-style: none;
   display: flex;
   margin: 0;
-  padding-left: 15px;
-  gap: 25px;
+  padding: 0;
+  position: relative;
 }
 
 #nav-bar li {
   display: flex;
+  padding: 14px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 1;
+  transition: padding 0.3s ease;
 }
 
 #nav-bar svg {
   width: 24px;
   height: 24px;
-  transition: transform 0.3s ease, fill 0.3s ease;
   fill: var(--text-color);
+  transition: transform 0.3s ease;
 }
 
 #nav-bar li:hover svg {
   transform: scale(1.1);
 }
 
+#sliding-indicator {
+  position: absolute;
+  bottom: 4px;
+  left: -15px;
+  height: 80%;
+  flex: none;
+  background-color: var(--highlighted-color);
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, 
+  rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, 
+  rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
+  transition: all 0.3s ease;
+}
+
+#nav-bar hr {
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 0;
+}
+
 #theme-switch {
   cursor: pointer;
-  height: 50px;
+  height: 25px;
   width: 50px;
-  padding: 0;
-  margin-left: -15px;
   background: transparent;
   border: none;
   display: flex;
@@ -284,7 +316,7 @@ header nav ul li a:hover {
 
 /* Home Styling */
 
-#home {
+.home {
   position: relative;
   height: 50vh;
   padding: 4rem 4rem;
@@ -365,7 +397,7 @@ header nav ul li a:hover {
   margin: 0;
   user-select: none;
   z-index: 1;
-  top: 124%;
+  top: 118%;
 }
 
 .showcase {
@@ -408,8 +440,14 @@ header nav ul li a:hover {
 }
 
 .container h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.upcoming {
   user-select: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
   background: linear-gradient(
@@ -420,7 +458,7 @@ header nav ul li a:hover {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: #222222;
+  text-shadow: var(--text-color);
 }
 
 /* Skillset Styling */
