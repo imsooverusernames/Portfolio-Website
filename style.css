@@ -85,7 +85,7 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 20px;
+  padding: 10px;
   z-index: 1000;
 }
 
@@ -163,7 +163,7 @@ header h4 {
 }
 
 header h4 a {
-  text-decoration: none;
+  text-decoration: transparent;
   color: var(--text-color);
 }
 
@@ -172,6 +172,7 @@ header nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin: 10px 40px;
   padding: 0;
 }
 
@@ -180,7 +181,7 @@ header nav ul li a {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  margin: 0 auto;
+  margin: 0;
   padding: 10px 20px;
   background: var(--bg-color);
   text-decoration: none;
@@ -367,16 +368,6 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  #visual {
-    transform: scale(1.5);
-  }
-  
-  .content {
-    padding: 2rem;
-    margin: 2rem;
-  }
-}
 
 #isometric {
   display: flex;
@@ -384,13 +375,15 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 4em;
+  font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.2em;
   letter-spacing: 2px;
   text-align: center;
   user-select: none;
   color: var(--text-color-white);
   transform: translate(0, -50%);
+  margin: 0 18rem;
+
 }
 
 .description {
@@ -400,12 +393,12 @@ header nav ul li a:hover {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1.2em;
   text-align: center;
   user-select: none;
   color: var(--text-color);
-  margin: 0 200px;
+  margin: 0 18rem;
   transform: translate(0, -70%);
 }
 
@@ -423,12 +416,12 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 4rem;
+  margin: 4rem 18rem;
 }
 
 .heading {
   position: relative;
-  font-size: 12rem;
+  font-size: clamp(4rem, 12vw, 12rem);
   font-weight: bold;
   margin: 0;
   background: linear-gradient(
@@ -449,7 +442,7 @@ header nav ul li a:hover {
 
 #projects p {
   position: absolute;
-  font-size: 1.2rem;
+  font-size: clamp(0.4rem, 2vw, 1.2rem);
   font-weight: normal;
   margin: 0;
   user-select: none;
@@ -556,7 +549,6 @@ header nav ul li a:hover {
   border-radius: 5px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 #skillset ul li img {
@@ -572,7 +564,7 @@ header nav ul li a:hover {
 }
 
 .scroller {
-  max-width: 1200px;
+  max-width: 80%;
 }
 
 .scroller[data-animated="true"] {
@@ -583,7 +575,11 @@ header nav ul li a:hover {
 .scroller[data-animated="true"] .scroller-inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 45s linear infinite;
+  animation: scroll 35s linear infinite;
+}
+
+@keyframes scroll {
+  to { transform: translateX(calc(-50% - 1rem)); }
 }
 
 .scroller-track {
@@ -596,10 +592,15 @@ header nav ul li a:hover {
 .scroller-track img {
   height: 150px;
   margin: 0 40px;
+  box-shadow: var(--box-shadow);
 }
 
-@keyframes scroll {
-  to { transform: translateX(calc(-50% - 1rem)); }
+@media screen and (max-width: 768px) {
+
+  .scroller-track img {
+    margin: 0 16px;
+  }
+  
 }
 
 /* Footer Styling */
@@ -609,7 +610,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background: var(--bg-color);
   color: var(--text-color);
   box-shadow: var(--box-shadow);
@@ -677,4 +678,22 @@ footer p {
 .social-icon:active {
   transform: scale(1.1);
   transition: scale 0.1s ease;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-button:hover .pointer-icon {
+    transform: rotate(135deg);
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
 }

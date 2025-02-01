@@ -85,7 +85,12 @@ function copyEmailAndShowToast(msg) {
     });
 }
 
+let isToastActive = false;
+
 function showToast(msg) {
+    if (isToastActive) return;  // Prevent multiple toasts
+    isToastActive = true;
+
     let toast = document.createElement('div');
     toast.classList.add('toast');
     toast.innerHTML = msg;
@@ -93,6 +98,7 @@ function showToast(msg) {
 
     setTimeout(() => {
         toast.remove();
+        isToastActive = false;
     }, 2000);
 }
 
