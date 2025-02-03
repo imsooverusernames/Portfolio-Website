@@ -25,7 +25,7 @@
 /* UTILITY CLASSES */
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
+  outline: 1px solid olive;
 }
 
 html {
@@ -329,7 +329,7 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 100%;
+  padding: 8vw;
   height: 100vh;
 }
 
@@ -339,16 +339,21 @@ header nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .blob1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   animation: floatUp 8s ease-in-out infinite;
   fill: var(--text-color);
 }
 
 .blob2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   animation: floatDown 8s ease-in-out infinite;
   fill: var(--text-color);
 }
@@ -358,7 +363,7 @@ header nav ul li a:hover {
     transform: translate(0, 0) scale(1); 
   }
   50% { 
-    transform: translate(-20px, -30px) scale(1.05);
+    transform: translate(-10px, -15px) scale(1);
   }
 }
 
@@ -367,7 +372,7 @@ header nav ul li a:hover {
     transform: translate(0, 0) scale(1); 
   }
   50% { 
-    transform: translate(20px, 30px) scale(0.95); 
+    transform: translate(10px, 15px) scale(1); 
   }
 }
 
@@ -414,6 +419,7 @@ header nav ul li a:hover {
 }
 
 .project-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,9 +427,9 @@ header nav ul li a:hover {
 }
 
 .heading {
-  position: relative;
   font-size: clamp(4rem, 12vw, 12rem);
   font-weight: bold;
+  padding: 0;
   margin: 0;
   background: linear-gradient(
     to bottom,
@@ -437,18 +443,16 @@ header nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
   text-shadow: #222222;
-  padding: 20px;
   user-select: none;
 }
 
 #projects p {
   position: absolute;
+  top: 60%;
   font-size: clamp(0.4rem, 2vw, 1.2rem);
   font-weight: normal;
-  margin: 0;
   user-select: none;
   z-index: 1;
-  top: 161%;
 }
 
 .showcase {
@@ -707,6 +711,10 @@ footer p {
     margin: 0.2rem 4rem;
   }
 
+  .contact-button {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -720,23 +728,17 @@ footer p {
     min-width: 18rem;
     height: 10rem;
   }
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-button:hover .pointer-icon {
-    transform: rotate(135deg);
-  }
-  
-  .social-icons {
-    display: flex;
-    flex-direction: row;
-  }
 
   .description {
     margin: 0.2rem 8rem;
+  }
+
+  footer p {
+    color: transparent;
+  }
+
+  .contact-section {
+    gap: 1rem;
   }
 
 }
