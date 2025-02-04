@@ -97,16 +97,14 @@ h6 {
   border-radius: 999px;
   box-shadow: var(--box-shadow);
   margin-bottom: 15px;
-  min-width: 300px;
+  min-width: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0.5rem;
   position: relative;
   z-index: 1000;
-  border-radius: 50px;
   overflow: hidden;
-  transform: translateY(-100%);
   animation: dropdown 0.2s linear forwards;
 }
 
@@ -117,7 +115,7 @@ h6 {
 
 .toast-icon svg {
     fill: var(--text-color);
-    margin: 3px;
+    margin-right: 5px;
 }
 
 @keyframes dropdown {
@@ -717,6 +715,10 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+
+  .toast {
+    padding: ;
+  }
 
   .project-img {
     min-width: 18rem;
