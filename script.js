@@ -1,26 +1,29 @@
 // darkmode code
-let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById('theme-switch');
 
-const enableDarkMode = () => {
+const updateTheme = () => {
+  const darkModeActive = localStorage.getItem('darkmode') === 'active';
+  if (darkModeActive) {
     document.body.classList.add('darkmode');
-    localStorage.setItem('darkmode', 'active');
-    darkmode = 'active';
-}
-const disableDarkMode = () => {
+  } else {
     document.body.classList.remove('darkmode');
-    localStorage.setItem('darkmode', null);
-    darkmode = null;
-}
+  }
+};
 
-if (darkmode === 'active') {
-    enableDarkMode();
-}
+const toggleDarkMode = () => {
+  const darkModeActive = localStorage.getItem('darkmode') === 'active';
+  if (darkModeActive) {
+    localStorage.removeItem('darkmode');
+  } else {
+    localStorage.setItem('darkmode', 'active');
+  }
+  updateTheme();
+};
 
-themeSwitch.addEventListener('click', () => {
-    darkmode = localStorage.getItem('darkmode');
-    darkmode !== "active" ? enableDarkMode() : disableDarkMode();
-});
+updateTheme();
+
+themeSwitch.addEventListener('click', toggleDarkMode);
+
 
 // Navbar Code
 const navLinks = document.querySelectorAll('.nav-link');
