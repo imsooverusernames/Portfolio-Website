@@ -16,7 +16,7 @@
   --text-color-white: #e0e0e0;
   --element-bg-color: rgba(28, 28, 28, 0.8);
   --slider-color: rgba(0, 0, 0, 0.295);
-  --highlighted-color: rgb(52, 52, 52); 
+  --highlighted-color: rgb(52, 52, 52);
   --border-color: #555;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
   --highlighted-color: #181818;
@@ -283,7 +283,7 @@ header nav ul li a:hover {
   border-radius: 999px;
   background-color: var(--slider-color);
   box-shadow: rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, 
-  rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, 
+  rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px,
   rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
   transition: all 0.3s ease;
 }
@@ -356,20 +356,20 @@ header nav ul li a:hover {
 }
 
 @keyframes floatUp {
-  0%, 100% { 
-    transform: translate(0, 0) scale(1); 
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
   }
-  50% { 
+  50% {
     transform: translate(-10px, -15px) scale(1);
   }
 }
 
 @keyframes floatDown {
-  0%, 100% { 
-    transform: translate(0, 0) scale(1); 
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
   }
-  50% { 
-    transform: translate(10px, 15px) scale(1); 
+  50% {
+    transform: translate(10px, 15px) scale(1);
   }
 }
 
@@ -496,7 +496,7 @@ header nav ul li a:hover {
 .soon img {
   filter: blur(50px);
 }
-.soon:hover img { 
+.soon:hover img {
   filter: blur(10px);
 }
 /* -------------- */
@@ -578,7 +578,7 @@ header nav ul li a:hover {
 .scroller[data-animated="true"] .scroller-inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 35s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 @keyframes scroll {
@@ -603,7 +603,7 @@ header nav ul li a:hover {
   .scroller-track img {
     margin: 0 16px;
   }
-  
+
 }
 
 /* Footer Styling */
