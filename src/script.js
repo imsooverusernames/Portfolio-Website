@@ -91,7 +91,7 @@ function copyEmailAndShowToast(msg) {
 let isToastActive = false;
 
 function showToast(msg) {
-    if (isToastActive) return;  // Prevent multiple toasts
+    if (isToastActive) return;
     isToastActive = true;
 
     let toast = document.createElement('div');

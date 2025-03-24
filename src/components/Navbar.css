@@ -1,0 +1,81 @@
+/* Header Styling */
+header {
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+}
+
+/* Logo styling */
+header h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  user-select: none;
+}
+
+header h4 a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Link Styling */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 10px 40px;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  background: var(--bg-color);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: font-weight 0.3s ease;
+  user-select: none;
+}
+
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 90%,
+    var(--text-color)
+  );
+  inset: -1px;
+  z-index: -1;
+  border-radius: 10px;
+  animation: spin 4s linear infinite;
+}
+
+header nav ul li a:hover {
+  font-weight: bold;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+
+}

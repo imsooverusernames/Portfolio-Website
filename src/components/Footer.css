@@ -1,0 +1,74 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    gap: 2rem;
+  }
+
+  .contact-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+    height: 1.3rem;
+  }
+
+  .contact-button:hover {
+    text-decoration: none;
+  }
+
+  .contact-button:hover .pointer-icon {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+
+  .pointer-icon {
+    cursor: pointer;
+    fill: var(--text-color);
+    transition: all 1s ease;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-icon {
+    transition: scale 0.3s ease, transform 0.3s ease;
+    fill: var(--text-color);
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .social-icon:active {
+    transform: scale(1.1);
+    transition: scale 0.1s ease;
+  }

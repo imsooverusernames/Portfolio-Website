@@ -1,0 +1,117 @@
+/* Project styling */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 12rem 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 18rem;
+  }
+
+  .heading {
+    font-size: clamp(4rem, 12vw, 12rem);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+      to bottom,
+      var(--text-color),
+      grey,
+      var(--bg-color),
+      var(--bg-color)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: #222222;
+    user-select: none;
+  }
+
+  #projects p {
+    position: absolute;
+    top: 60%;
+    font-size: clamp(0.4rem, 2vw, 1.2rem);
+    font-weight: normal;
+    user-select: none;
+    z-index: 1;
+  }
+
+  .showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .project-img {
+    min-width: 28rem;
+    height: 15rem;
+    transition: all 0.3s ease;
+  }
+
+  .project-img:hover {
+    transform: translateY(-10px);
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    clip-path: inset(0 round 0 20px 0 0);
+    transition: all 0.3s ease;
+  }
+
+  .project-img:hover img {
+    filter: blur(0);
+    clip-path: inset(0 round 0 20px 0 0);
+  }
+
+  /* to be removed */
+  .soon img {
+    filter: blur(50px);
+  }
+  .soon:hover img {
+    filter: blur(10px);
+  }
+  /* -------------- */
+
+  .container h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .upcoming {
+    user-select: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(
+      to right,
+      var(--text-color),
+      var(--bg-color),
+      var(--bg-color)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--text-color);
+  }
