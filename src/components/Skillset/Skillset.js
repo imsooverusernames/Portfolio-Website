@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skillset.css";
 
 import html from "../../assets/svg/skillset-svg/html.svg";
@@ -17,42 +17,71 @@ import cademy6 from "../../assets/images/certificates/React_Frontend_App.jpg";
 import cademy7 from "../../assets/images/certificates/React_Testing_Certificate.jpg";
 
 const Skillset = () => {
+  useEffect(() => {
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+  }, []);
+
+  const addAnimation = () => {
+    document.querySelectorAll(".scroller").forEach((scroller) => {
+      scroller.setAttribute("data-animated", true);
+      const scrollerInner = scroller.querySelector(".scroller-inner");
+      const scrollerContent = Array.from(scrollerInner.children);
+
+      scrollerContent.forEach((item) => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute("aria-hidden", true);
+        scrollerInner.appendChild(clone);
+      });
+
+      scroller.addEventListener("mouseenter", () => {
+        scroller.classList.add("paused");
+      });
+      scroller.addEventListener("mouseleave", () => {
+        scroller.classList.remove("paused");
+      });
+    });
+  };
+
+  const skills = [
+    { src: html, alt: "HTML logo", span: "HTML" },
+    { src: css, alt: "CSS logo", span: "CSS" },
+    { src: js, alt: "JavaScript logo", span: "JavaScript" },
+    { src: git, alt: "GitHub logo", span: "GitHub" },
+    { src: react, alt: "React logo", span: "React" },
+  ];
+
+  const certificates = [
+    { src: meta, alt: "Meta Certificate" },
+    { src: cademy1, alt: "Front-End Certificate" },
+    { src: cademy2, alt: "Git & GitHub Certificate" },
+    { src: cademy3, alt: "JavaScript Certificate" },
+    { src: cademy4, alt: "React and Redux Certificate" },
+    { src: cademy5, alt: "React Certificate" },
+    { src: cademy6, alt: "React Frontend App Certificate" },
+    { src: cademy7, alt: "React Testing Certificate" },
+  ];
+
   return (
     <section id="skillset">
       <h1 className="heading">Skillset</h1>
       <ul>
-        <li className="isometric-container">
-          <img src={html} />
-          <span>HTML</span>
-        </li>
-        <li className="isometric-container">
-          <img src={css} alt="CSS logo" />
-          <span>CSS</span>
-        </li>
-        <li className="isometric-container">
-          <img src={js} />
-          <span>JavaScript</span>
-        </li>
-        <li className="isometric-container">
-          <img src={git} />
-          <span>GitHub</span>
-        </li>
-        <li className="isometric-container">
-          <img src={react} alt="React logo" />
-          <span>React</span>
-        </li>
+        {skills.map((item) => {
+          return (
+            <li>
+              <img src={item.src} alt={item.alt} />
+              <span>{item.span}</span>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="scroller">
         <div className="scroller-track scroller-inner">
-          <img src={meta} />
-          <img src={cademy1} />
-          <img src={cademy2} />
-          <img src={cademy3} />
-          <img src={cademy4} />
-          <img src={cademy5} />
-          <img src={cademy6} />
-          <img src={cademy7} />
+          {certificates.map((item) => {
+            return <img src={item.src} alt={item.alt} />;
+          })}
         </div>
       </div>
     </section>

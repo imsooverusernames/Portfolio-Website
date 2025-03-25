@@ -4,6 +4,22 @@ import blurred from "../../assets/images/blurred.jpg";
 import portfolio from "../../assets/images/portfilio-website.png";
 
 const Procejts = () => {
+  const projects = [
+    { src: portfolio, alt: "Portfolio Website", h4: "Portfolio Website" },
+    {
+      src: blurred,
+      alt: "Upcoming Project",
+      h4: "Upcoming...",
+      class: "upcoming",
+    },
+    {
+      src: blurred,
+      alt: "Upcoming Project",
+      h4: "Upcoming...",
+      class: "upcoming",
+    },
+  ];
+
   return (
     <section id="projects">
       <div class="project-text">
@@ -15,26 +31,16 @@ const Procejts = () => {
       </div>
 
       <div class="showcase">
-        <div class="container">
-          <div class="project-img isometric-container">
-            <img src={portfolio} alt="Portfolio Website" loading="lazy" />
-          </div>
-          <h4>Portfolio Website</h4>
-        </div>
-
-        <div class="container">
-          <div class="project-img isometric-container soon">
-            <img src={blurred} alt="Upcoming Project" loading="lazy" />
-          </div>
-          <h4 class="upcoming">Upcoming...</h4>
-        </div>
-
-        <div class="container">
-          <div class="project-img isometric-container soon">
-            <img src={blurred} alt="Upcoming Project" loading="lazy" />
-          </div>
-          <h4 class="upcoming">Upcoming...</h4>
-        </div>
+        {projects.map((item) => {
+          return (
+            <div className="container">
+              <div className="project-img isometric-container">
+                <img src={item.src} alt={item.alt} loading="lazy" />
+              </div>
+              <h4 className={item.class}>{item.h4}</h4>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
