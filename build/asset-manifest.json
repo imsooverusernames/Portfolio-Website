@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fb4fb147.css",
+    "main.js": "/static/js/main.988e8a93.js",
+    "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/Coursera-Meta-Certificate.jpg": "/static/media/Coursera-Meta-Certificate.2d38a642126db8d87695.jpg",
+    "static/media/Front-End _ Certificate.jpg": "/static/media/Front-End _ Certificate.66010b067fefab668f11.jpg",
+    "static/media/React and Redux.jpg": "/static/media/React and Redux.517d7a5eb00c295ab845.jpg",
+    "static/media/JS_Certificate.jpg": "/static/media/JS_Certificate.39d17b90c40755ad74e4.jpg",
+    "static/media/React_Testing_Certificate.jpg": "/static/media/React_Testing_Certificate.44bf755dc084ea907d9b.jpg",
+    "static/media/Git&GitHub_Certificate.jpg": "/static/media/Git&GitHub_Certificate.58fcc8d805da021685ca.jpg",
+    "static/media/React_Frontend_App.jpg": "/static/media/React_Frontend_App.ee3771f20aaaa3c22a8e.jpg",
+    "static/media/React_Certificate.jpg": "/static/media/React_Certificate.9cf2a4dbd659c5d3441a.jpg",
+    "static/media/portfilio-website.png": "/static/media/portfilio-website.c7245efceb83bfd7a4bc.png",
+    "static/media/blurred.jpg": "/static/media/blurred.d9706030d41c4ab144e9.jpg",
+    "static/media/react.svg": "/static/media/react.22a05374f4eefdd120b71df3f98d68a1.svg",
+    "static/media/github.svg": "/static/media/github.0b57161d1d5ac72f41f62aaec18e6ab9.svg",
+    "static/media/css.svg": "/static/media/css.6fc6b21fb9149ace3fcefc9a16a7f430.svg",
+    "static/media/html.svg": "/static/media/html.5a733bcd0eac3e816d6591c8840b038a.svg",
+    "index.html": "/index.html",
+    "static/media/js.svg": "/static/media/js.ff9cb4310fe13569e3dfb229650f3f10.svg",
+    "main.fb4fb147.css.map": "/static/css/main.fb4fb147.css.map",
+    "main.988e8a93.js.map": "/static/js/main.988e8a93.js.map",
+    "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb4fb147.css",
+    "static/js/main.988e8a93.js"
+  ]
+}
