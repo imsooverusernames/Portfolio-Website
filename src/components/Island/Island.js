@@ -9,34 +9,36 @@ const Island = () => {
     localStorage.getItem("darkmode") === "active"
   );
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const fromTop = window.scrollY;
-      const navLinks = navRef.current.querySelectorAll(".nav-link");
+useEffect(() => {
+  const handleScroll = () => {
+    const fromTop = window.scrollY;
+    const navLinks = navRef.current.querySelectorAll(".nav-link");
 
-      navLinks.forEach((link, index) => {
-        const section = document.querySelector(link.getAttribute("href"));
+    navLinks.forEach((link, index) => {
+      const section = document.querySelector(link.getAttribute("href"));
 
-        setActiveIndex(index);
-        if (
-          section.offsetTop <= fromTop + 1 &&
-          section.offsetTop + section.offsetHeight > fromTop + 1
-        ) {
-          console.log("index", index, link);
-          const linkRect = link.getBoundingClientRect();
-          const navRect = navRef.current.getBoundingClientRect();
-
-          indicatorRef.current.style.width = `${linkRect.width + 30}px`;
-          indicatorRef.current.style.transform = `translateX(${
-            linkRect.left - navRect.left
-          }px)`;
+      if (
+        section.offsetTop <= fromTop + 1 &&
+        section.offsetTop + section.offsetHeight > fromTop + 1
+      ) {
+        if (activeIndex !== index) {
+          setActiveIndex(index);
         }
-      });
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+        const linkRect = link.getBoundingClientRect();
+        const navRect = navRef.current.getBoundingClientRect();
+
+        indicatorRef.current.style.width = `${linkRect.width + 30}px`;
+        indicatorRef.current.style.transform = `translateX(${
+          linkRect.left - navRect.left
+        }px)`;
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [activeIndex]);
 
   useEffect(() => {
     if (darkMode) {

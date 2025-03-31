@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-const Island = () => {
+const Navbar = () => {
   const [isToastActive, setIsToastActive] = useState(false);
 
   const email = "brunoborici@gmail.com";
@@ -67,4 +67,4 @@ const Island = () => {
   );
 };
 
-export default Island;
+export default Navbar;

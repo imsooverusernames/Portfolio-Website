@@ -26,21 +26,25 @@ const Skillset = () => {
   ];
 
   const certificatesImg = [
-    { id: "meta", src: meta, alt: "Meta Certificate" },
-    { id: "cademy1", src: cademy1, alt: "Front-End Certificate" },
-    { id: "cademy2", src: cademy2, alt: "Git & GitHub Certificate" },
-    { id: "cademy3", src: cademy3, alt: "JavaScript Certificate" },
-    { id: "cademy4", src: cademy4, alt: "React and Redux Certificate" },
-    { id: "cademy5", src: cademy5, alt: "React Certificate" },
-    { id: "cademy6", src: cademy6, alt: "React Frontend App Certificate" },
-    { id: "cademy7", src: cademy7, alt: "React Testing Certificate" },
+    { src: meta, alt: "Meta Certificate" },
+    { src: cademy1, alt: "Front-End Certificate" },
+    { src: cademy2, alt: "Git & GitHub Certificate" },
+    { src: cademy3, alt: "JavaScript Certificate" },
+    { src: cademy4, alt: "React and Redux Certificate" },
+    { src: cademy5, alt: "React Certificate" },
+    { src: cademy6, alt: "React Frontend App Certificate" },
+    { src: cademy7, alt: "React Testing Certificate" },
   ];
 
 
   const [certificates, setCertificates] = useState([]);
   useEffect(() => {
-    setCertificates([...certificatesImg, ...certificatesImg]);
-  }, [certificates]);
+    setCertificates([
+      ...certificatesImg.map((item, index) => ({ ...item, id: `original-${index}` })),
+      ...certificatesImg.map((item, index) => ({ ...item, id: `duplicate-${index}` }))
+    ]);
+  }, []);
+
 
 
 
@@ -56,11 +60,11 @@ const Skillset = () => {
         ))}
       </ul>
 
-      <div className="scroller">
-        <div className="scroller-track">
+      <div className="slider">
+        <div className="slider-track">
           {certificates.map((item) => (
-            <div className="scroll" key={item.id}>
-              <img key={item.id} src={item.src} alt={item.alt} />
+            <div className="slide" key={item.id}>
+              <img src={item.src} alt={item.alt} />
             </div>
           ))}
         </div>

@@ -46,7 +46,7 @@
 
 /* Scroller Styling */
 
-.scroller {
+.slider {
   max-width: 80%;
   overflow: hidden;
   mask: linear-gradient(
@@ -58,7 +58,7 @@
   );
 }
 
-.scroller-track {
+.slider-track {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -74,24 +74,24 @@
   }
 }
 
-.scroll img {
+.slide img {
   height: 150px;
   margin: 0 40px;
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.61);
 }
 
-.scroll img:hover {
+.slide img:hover {
   transform: scale(2);
   transition: transform 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
-  .scroll img {
+  .slide img {
     margin: 0 16px;
   }
 }
 
-.scroller-track:has(.scroll img:hover) {
+.slider-track:has(.slide img:hover) {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
