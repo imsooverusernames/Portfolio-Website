@@ -134,3 +134,18 @@ header nav ul li a:hover {
     width: 0;
   }
 }
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 1rem;
+  }
+
+  header nav ul li a {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  header nav ul {
+    margin: 0;
+  }
+}

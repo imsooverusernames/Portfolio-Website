@@ -72,3 +72,19 @@ footer {
     transform: scale(1.1);
     transition: scale 0.1s ease;
   }
+
+  @media screen and (max-width: 768px) {
+    footer p {
+      color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .contact-button {
+      display: none;
+    }
+
+    .social-icons {
+      flex-direction: row;
+    }
+  }
