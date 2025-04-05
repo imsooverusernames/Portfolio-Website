@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 🌐 Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Introduction
 
-## Available Scripts
+Welcome to my personal portfolio website! I'm a **Frontend Developer** passionate about building visually appealing and interactive web experiences. This site acts as my digital business card—showcasing my work, skills, and projects while allowing visitors to get in touch with me effortlessly.
 
-In the project directory, you can run:
+## 💡 Problem It Solves
 
-### `npm start`
+In today’s digital-first world, having a strong online presence is essential. However, many developers struggle with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Presenting their work in a visually engaging way
+- Demonstrating their coding ability beyond GitHub repositories
+- Offering a simple and fast method of contact
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio solves these challenges by combining clean design, fluid animations, and responsive layouts to provide an intuitive, engaging experience.
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **HTML**, **CSS**, **JavaScript**
+- **React** for component-based architecture and reusability
+- **Toast Notifications** for subtle user feedback
+- **Custom Hosting Solution** (domain and deployment)
 
-### `npm run build`
+## ⚙️ Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🎨 **Light/Dark Mode** toggle for accessibility and user preference
+- ✨ **Smooth Scrolling and Animations** to enhance user experience
+- 🔔 **Toast Notifications** for real-time feedback and alerts
+- 📱 **Responsive Design** — looks great on desktop, tablet, and mobile
+- ⚡ **Optimized Performance** with minimal dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧩 Challenges Faced
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. **Animating SVGs**
+Creating dynamic, interactive SVG animations while maintaining performance and browser compatibility was challenging. After experimentation, I found ways to integrate SVG paths with CSS and JS to bring designs to life.
+### 2. **Refactoring to React**
+The original version of this site was written using vanilla HTML, CSS, and JavaScript. Transitioning the project to React involved breaking down each section into reusable components and managing state for dynamic features like dark mode and toast notifications.
 
-### `npm run eject`
+## 🔮 What's Next
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📝 Add a blog section to share tutorials, learning notes, and thoughts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 Implement a headless CMS for dynamic project/content updates
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧪 Integrate performance and accessibility testing tools
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📊 Add visitor analytics to track engagement and user flow
