@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.d49e2e92.css",
-    "main.js": "/static/js/main.c04b0f07.js",
+    "main.css": "/static/css/main.529c6132.css",
+    "main.js": "/static/js/main.3e85557f.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/tcp.png": "/static/media/tcp.f63fc76dde00d11dbdb3.png",
     "static/media/Coursera-Meta-Certificate.jpg": "/static/media/Coursera-Meta-Certificate.2d38a642126db8d87695.jpg",
     "static/media/Front-End _ Certificate.jpg": "/static/media/Front-End _ Certificate.66010b067fefab668f11.jpg",
     "static/media/React and Redux.jpg": "/static/media/React and Redux.517d7a5eb00c295ab845.jpg",
@@ -19,12 +20,12 @@
     "static/media/html.svg": "/static/media/html.5a733bcd0eac3e816d6591c8840b038a.svg",
     "index.html": "/index.html",
     "static/media/js.svg": "/static/media/js.ff9cb4310fe13569e3dfb229650f3f10.svg",
-    "main.d49e2e92.css.map": "/static/css/main.d49e2e92.css.map",
-    "main.c04b0f07.js.map": "/static/js/main.c04b0f07.js.map",
+    "main.529c6132.css.map": "/static/css/main.529c6132.css.map",
+    "main.3e85557f.js.map": "/static/js/main.3e85557f.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d49e2e92.css",
-    "static/js/main.c04b0f07.js"
+    "static/css/main.529c6132.css",
+    "static/js/main.3e85557f.js"
   ]
 }
