@@ -1,17 +1,22 @@
-import React from "react";
 import "./Projects.css";
 import blurred from "../../assets/images/blurred.jpg";
 import portfolio from "../../assets/images/portfilio-website.png";
+import tcp from "../../assets/images/tcp.png";
 
-const Procejts = () => {
+const Projects = () => {
   const projects = [
-    { id: 1, src: portfolio, alt: "Portfolio Website", h4: "Portfolio Website" },
+    {
+      id: 1,
+      src: portfolio,
+      alt: "Portfolio Website",
+      h4: "Portfolio Website",
+    },
     {
       id: 2,
-      src: blurred,
-      alt: "Upcoming Project",
-      h4: "Upcoming...",
-      type: "upcoming",
+      src: tcp,
+      alt: "The Comedy Pub",
+      h4: "The Comedy Pub",
+      link: "/tcp-frontend/",
     },
     {
       id: 3,
@@ -34,7 +39,7 @@ const Procejts = () => {
 
       <div className="showcase">
         {projects.map((item) => {
-          return (
+          const card = (
             <div className="container" key={item.id}>
               <div className="project-img isometric-container">
                 <img src={item.src} alt={item.alt} loading="lazy" />
@@ -42,10 +47,23 @@ const Procejts = () => {
               <h4 className={item.type}>{item.h4}</h4>
             </div>
           );
+
+          return item.link ? (
+            <a
+              key={item.id}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {card}
+            </a>
+          ) : (
+            card
+          );
         })}
       </div>
     </section>
   );
 };
 
-export default Procejts;
+export default Projects;

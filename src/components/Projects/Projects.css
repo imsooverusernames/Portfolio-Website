@@ -96,6 +96,12 @@
   margin: 0;
 }
 
+#projects a {
+  text-decoration: none;
+  color: #222;
+}
+
+
 .upcoming {
   user-select: none;
   font-size: 1.4rem;
