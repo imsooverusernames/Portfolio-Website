@@ -1,17 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.d49e2e92.css",
-    "main.js": "/static/js/main.c04b0f07.js",
+    "main.css": "/static/css/main.35a156b8.css",
+    "main.js": "/static/js/main.4b071cf5.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/tcp.png": "/static/media/tcp.f63fc76dde00d11dbdb3.png",
+    "static/media/Solution4.png": "/static/media/Solution4.31d17f9fb27a46626a60.png",
+    "static/media/Solution5.png": "/static/media/Solution5.1e50c8f2f4f4c412f223.png",
     "static/media/Coursera-Meta-Certificate.jpg": "/static/media/Coursera-Meta-Certificate.2d38a642126db8d87695.jpg",
+    "static/media/Solution6.png": "/static/media/Solution6.462c3d66b4aa2a74447d.png",
+    "static/media/Solution1.png": "/static/media/Solution1.c8d61977dac2a261edd3.png",
+    "static/media/Solution3.png": "/static/media/Solution3.21630660d4ff8bdae1d0.png",
+    "static/media/Page3.png": "/static/media/Page3.1651ef92fed0ee1ece86.png",
+    "static/media/Page4.png": "/static/media/Page4.8f1d5675939b11633182.png",
+    "static/media/Page1.png": "/static/media/Page1.3e38ee53d6b440065028.png",
+    "static/media/Solution2.png": "/static/media/Solution2.31b1a81d62912e7e9244.png",
     "static/media/Front-End _ Certificate.jpg": "/static/media/Front-End _ Certificate.66010b067fefab668f11.jpg",
+    "static/media/Page5.png": "/static/media/Page5.0e1aafb079932617c7ad.png",
+    "static/media/Page6.png": "/static/media/Page6.797a1ff56d98f858cefa.png",
     "static/media/React and Redux.jpg": "/static/media/React and Redux.517d7a5eb00c295ab845.jpg",
     "static/media/JS_Certificate.jpg": "/static/media/JS_Certificate.39d17b90c40755ad74e4.jpg",
     "static/media/React_Testing_Certificate.jpg": "/static/media/React_Testing_Certificate.44bf755dc084ea907d9b.jpg",
     "static/media/Git&GitHub_Certificate.jpg": "/static/media/Git&GitHub_Certificate.58fcc8d805da021685ca.jpg",
     "static/media/React_Frontend_App.jpg": "/static/media/React_Frontend_App.ee3771f20aaaa3c22a8e.jpg",
     "static/media/React_Certificate.jpg": "/static/media/React_Certificate.9cf2a4dbd659c5d3441a.jpg",
+    "static/media/Page7.png": "/static/media/Page7.568cef24e936a4096095.png",
     "static/media/portfilio-website.png": "/static/media/portfilio-website.c7245efceb83bfd7a4bc.png",
+    "static/media/Page2.png": "/static/media/Page2.38cdc3464ecc91453633.png",
+    "static/media/Solution7.png": "/static/media/Solution7.fec26824a110d809413d.png",
     "static/media/blurred.jpg": "/static/media/blurred.d9706030d41c4ab144e9.jpg",
     "static/media/react.svg": "/static/media/react.22a05374f4eefdd120b71df3f98d68a1.svg",
     "static/media/github.svg": "/static/media/github.0b57161d1d5ac72f41f62aaec18e6ab9.svg",
@@ -19,12 +34,12 @@
     "static/media/html.svg": "/static/media/html.5a733bcd0eac3e816d6591c8840b038a.svg",
     "index.html": "/index.html",
     "static/media/js.svg": "/static/media/js.ff9cb4310fe13569e3dfb229650f3f10.svg",
-    "main.d49e2e92.css.map": "/static/css/main.d49e2e92.css.map",
-    "main.c04b0f07.js.map": "/static/js/main.c04b0f07.js.map",
+    "main.35a156b8.css.map": "/static/css/main.35a156b8.css.map",
+    "main.4b071cf5.js.map": "/static/js/main.4b071cf5.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d49e2e92.css",
-    "static/js/main.c04b0f07.js"
+    "static/css/main.35a156b8.css",
+    "static/js/main.4b071cf5.js"
   ]
 }

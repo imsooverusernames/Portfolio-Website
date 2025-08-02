@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
     <section id="home">
       <header>
         <h4 className="logo">
-          <a href="#">BrunoBorici</a>
+          <Link to="/">BrunoBorici</Link>
         </h4>
         <nav>
           <ul>
@@ -31,6 +32,7 @@ const Navbar = () => {
               <a
                 onClick={copyEmailAndShowToast}
                 aria-label="Copy email address"
+                style={{ cursor: "pointer" }}
               >
                 Mail
               </a>
@@ -48,9 +50,12 @@ const Navbar = () => {
           </ul>
         </nav>
       </header>
+
+      {/* Toast message */}
       {isToastActive && (
         <div id="toast-container" className="toast">
           <div className="toast-icon">
+            {/* SVG icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"

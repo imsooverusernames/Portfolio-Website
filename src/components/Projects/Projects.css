@@ -34,6 +34,8 @@
   color: transparent;
   text-shadow: #222222;
   user-select: none;
+  text-align: center;
+  letter-spacing: clamp(1px, 1vw, 4px);
 }
 
 #projects p {
@@ -98,7 +100,7 @@
 
 #projects a {
   text-decoration: none;
-  color: #222;
+  color: var(--text-color);
 }
 
 

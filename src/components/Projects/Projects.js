@@ -1,4 +1,5 @@
 import "./Projects.css";
+import { Link } from "react-router-dom";
 import blurred from "../../assets/images/blurred.jpg";
 import portfolio from "../../assets/images/portfilio-website.png";
 import tcp from "../../assets/images/tcp.png";
@@ -49,14 +50,9 @@ const Projects = () => {
           );
 
           return item.link ? (
-            <a
-              key={item.id}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link key={item.id} to={item.link}>
               {card}
-            </a>
+            </Link>
           ) : (
             card
           );

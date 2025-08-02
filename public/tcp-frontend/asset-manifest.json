@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tcp-frontend/static/css/main.10323864.css",
-    "main.js": "/tcp-frontend/static/js/main.31dc453e.js",
+    "main.css": "/tcp-frontend/static/css/main.f9069189.css",
+    "main.js": "/tcp-frontend/static/js/main.094b9cd2.js",
     "static/js/453.6d6b7092.chunk.js": "/tcp-frontend/static/js/453.6d6b7092.chunk.js",
     "static/media/vorschau.mp4": "/tcp-frontend/static/media/vorschau.51c051ab74560fba9574.mp4",
     "static/media/tsu.png": "/tcp-frontend/static/media/tsu.85df89234af53048ffd4.png",
@@ -24,15 +24,15 @@
     "static/media/Instagram.svg": "/tcp-frontend/static/media/Instagram.5e41a2260d3000d813ed2be65535b659.svg",
     "static/media/TikTok.svg": "/tcp-frontend/static/media/TikTok.8c2db526e037c29eb89761bc08a25f84.svg",
     "index.html": "/tcp-frontend/index.html",
-    "static/media/Email.svg": "/tcp-frontend/static/media/Email.0d1b0fbbba2c4285d46ec27e2cf2e1f4.svg",
+    "static/media/Email.svg": "/tcp-frontend/static/media/Email.29de83465560b9d54001fd7ebf2fdec2.svg",
     "static/media/Facebook.svg": "/tcp-frontend/static/media/Facebook.f99d10a5deb78eefbe0d61031fd0fb41.svg",
     "static/media/link_arrow.svg": "/tcp-frontend/static/media/link_arrow.ac0ae0d7eaeb8e2f1ab6dc190ac595d2.svg",
-    "main.10323864.css.map": "/tcp-frontend/static/css/main.10323864.css.map",
-    "main.31dc453e.js.map": "/tcp-frontend/static/js/main.31dc453e.js.map",
+    "main.f9069189.css.map": "/tcp-frontend/static/css/main.f9069189.css.map",
+    "main.094b9cd2.js.map": "/tcp-frontend/static/js/main.094b9cd2.js.map",
     "453.6d6b7092.chunk.js.map": "/tcp-frontend/static/js/453.6d6b7092.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10323864.css",
-    "static/js/main.31dc453e.js"
+    "static/css/main.f9069189.css",
+    "static/js/main.094b9cd2.js"
   ]
 }
